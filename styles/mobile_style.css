@@ -64,7 +64,7 @@ a {
 #app-screen {
     width: 100%;
     height: 100%;
-    border-radius: 45px;
+    border-radius: 45px 45px 25px 25px;
 }
 #description {
     margin: 0 45px;
