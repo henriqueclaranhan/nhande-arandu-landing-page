@@ -1,7 +1,7 @@
 #triangle-end-app{
 	display: none;
 	left: 0;
-	bottom: calc(var(--triangle-size) * -1);
+	bottom: calc( (var(--triangle-size) - 1px )* -1);
 
 	border-top-color: var(--triangle-app-color);
 }
