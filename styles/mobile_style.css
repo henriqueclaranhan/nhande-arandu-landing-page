@@ -36,7 +36,7 @@
 #triangle-2 {
     right: 0;
     bottom: -15px;
-    border-top-color: #fdc21f;
+    border-top-color: var(--triangle-app-color);
 }
 #motto {
     position: relative;
@@ -85,7 +85,7 @@
 #triangle-3 {
     top: -15px;
     left: -45px;
-    border-top-color: #fdc21f;
+    border-top-color: var(--triangle-app-color);
 }
 #app-title {
     font-family: 'Goldman', sans-serif;
