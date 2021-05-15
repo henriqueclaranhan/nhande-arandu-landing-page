@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
 
+:root {
+    --bgcolor-blue: #0c9bed;
+    --bgcolor-dark: #010417;
+    --decoration-color: #29c3c4;
+}
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +14,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body {
-    background-color: #010417;
+    background-color: var(--bgcolor-dark);
     height: 100vh;
     width: 100%;
     position: relative;
@@ -18,8 +23,10 @@ a {
     text-decoration: none;
 }
 #title {
-    margin-top: 50px;
-    margin-bottom: 75px;
+    position: relative;
+    background-color: var(--bgcolor-dark);
+    padding-top: 50px;
+    padding-bottom: 20px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -31,24 +38,57 @@ a {
     margin-right: 10px;
 }
 #title span {
-    color: #29c3c4;
+    color: var(--decoration-color);
     font-family: 'Goldman', sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 42px;
     width: min-content;
 }
-#motto {
-    margin: 0 50px;
+#top-line {
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background-color: var(--decoration-color);
+    top: 0;
 }
-#motto span{
+#triangle-1 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    border-left: 0px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid var(--decoration-color);
+}
+#triangle-2 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 0;
+    bottom: -15px;
+    border-left: 50px solid transparent;
+    border-right: 0 solid transparent;
+    border-bottom: 50px solid #fdc21f;
+}
+#motto {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 55px;
+}
+#motto p{
+    margin: 0 50px;
     font-size: 1.9rem;
     line-height: 40px;
 }
 #app-preview {
     background-color: #fdc21f;
-    margin-top: 80px;
-    margin-bottom: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 100%;
     height: 77%;
     display: flex;
@@ -71,9 +111,21 @@ a {
     border-radius: 45px 45px 35px 35px;
 }
 #description {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin: 0 45px;
+    padding-top: 70px;
+}
+#triangle-3 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -15px;
+    left: -45px;
+    border-left: 0px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid #fdc21f;
 }
 #app-title {
     font-family: 'Goldman', sans-serif;
@@ -113,10 +165,12 @@ a {
     margin-bottom: 23px;
 }
 #android-download-btn {
-    background-color: #61B43E;
+    background-color: #b69d11;
 }
 #android-download-btn img {
     filter: invert();
+    width: 43px;
+    height: 43px;
 }
 #ios-download-btn {
     background-color: white;
@@ -157,4 +211,25 @@ a {
     width: max-content;
     margin: 0 auto;
     color: #ffffffb2;
+}
+#bottom-decoration {
+    margin-top: 40px;
+    position: relative;
+}
+#bottom-triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 0;
+    bottom: 0;
+    border-left: 50px solid transparent;
+    border-right: 0 solid transparent;
+    border-bottom: 50px solid var(--decoration-color);
+}
+#bottom-line {
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background-color: var(--decoration-color);
+    bottom: 0;
 }
