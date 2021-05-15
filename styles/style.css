@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+
+:root {
+    --bgcolor-blue: #0c9bed;
+    --bgcolor-dark: #010417;
+    --decoration-color: #29c3c4;
+
+    --triangle-size: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--bgcolor-dark);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+.triangle{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: var(--triangle-size) solid transparent;
+    border-top: var(--triangle-size) solid;
+}
+
+.deg90{
+    transform: rotate(90deg);
+}
+
+.deg180{
+    transform: rotate(180deg);
+}
+
+.deg270{
+    transform: rotate(270deg);
+}
