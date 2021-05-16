@@ -26,3 +26,7 @@
     bottom: 0;
     border-top-color: var(--decoration-color);
 }
+
+#footer{
+    padding-bottom: 40px;
+}
