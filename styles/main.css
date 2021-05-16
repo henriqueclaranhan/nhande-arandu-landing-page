@@ -1,0 +1,28 @@
+#top-line {    
+    top: 0;
+}
+
+#bottom-line {
+    bottom: 0;
+}
+
+#triangle-1 {
+    top: 0;
+    left: 0;
+    border-top-color: var(--decoration-color);
+}
+#triangle-2 {
+    right: 0;
+    bottom: -15px;
+    border-top-color: var(--triangle-app-color);
+}
+#triangle-3 {
+    top: -15px;
+    left: -45px;
+    border-top-color: var(--triangle-app-color);
+}
+#bottom-triangle {
+    right: 0;
+    bottom: 0;
+    border-top-color: var(--decoration-color);
+}
