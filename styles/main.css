@@ -1,3 +1,32 @@
+#rede-sociais{
+    display: flex; 
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 0.5rem;
+}
+
+#icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#rede-sociais .icon-media img{
+    --tamanho-icon: 25px;
+
+    height: var(--tamanho-icon);
+    width: var(--tamanho-icon);
+}
+
+#rede-sociais .textinho-top{
+    /*! margin-top: 12px; */
+    /*! margin-left: 15px; */
+    text-align: center;
+    padding: 14px;
+}
+
 #top-line {    
     top: 0;
 }
