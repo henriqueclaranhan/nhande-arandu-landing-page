@@ -3,6 +3,10 @@
 		color: red;
 		opacity: 0;
 	}
+    #credits {
+        max-width: 87%;
+        text-align: center;
+    }
 }
 
 #rede-sociais{
@@ -61,8 +65,10 @@
 #footer{
     padding-bottom: 40px;
 }
-.privacy-policy {
-    width: max-content;
+.privacy-policy, .credits-p {
     margin: 0 auto;
     color: #ffffffb2;
+}
+.privacy-policy {
+    width: max-content;
 }
