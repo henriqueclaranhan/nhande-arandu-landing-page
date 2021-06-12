@@ -1,3 +1,10 @@
+@media (max-width: 767px) {
+    #point-1 {
+		color: red;
+		opacity: 0;
+	}
+}
+
 #rede-sociais{
     display: flex; 
     flex-direction: column;
