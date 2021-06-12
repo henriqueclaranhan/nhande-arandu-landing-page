@@ -132,11 +132,6 @@
     width: 180px;
     transform: rotate(270deg);
 }
-#privacy-policy {
-    width: max-content;
-    margin: 0 auto;
-    color: #ffffffb2;
-}
 #bottom-decoration {
     position: relative;
 }

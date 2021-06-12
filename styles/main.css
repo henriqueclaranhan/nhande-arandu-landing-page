@@ -8,24 +8,19 @@
     width: 180px;
 }
 
-#icons{
+#icons {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-
-#rede-sociais .icon-media img{
-    --tamanho-icon: 25px;
-
+.icon-media {
+    margin: 0 15px;
+}
+#rede-sociais .icon-media img {
+    --tamanho-icon: 35px;
+    border-radius: 5px;
     height: var(--tamanho-icon);
     width: var(--tamanho-icon);
-}
-
-#rede-sociais .textinho-top{
-    /*! margin-top: 12px; */
-    /*! margin-left: 15px; */
-    text-align: center;
-    padding: 14px;
 }
 
 #top-line {    
@@ -56,7 +51,11 @@
     bottom: 0;
     border-top-color: var(--decoration-color);
 }
-
 #footer{
     padding-bottom: 40px;
+}
+.privacy-policy {
+    width: max-content;
+    margin: 0 auto;
+    color: #ffffffb2;
 }

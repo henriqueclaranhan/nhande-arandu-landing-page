@@ -1,0 +1,31 @@
+@media (min-width: 1024px){
+
+}
+
+@media (min-width: 739px){
+    #privacy-policy-section {
+        margin: 100px 150px;
+    }
+}
+
+@media(max-width: 738px){
+    #privacy-policy-section {
+        margin: 80px 10%;
+    }
+}
+@media(max-width: 485px){
+    #privacy-policy-section {
+        margin: 60px 10%;
+    }
+}
+
+#privacy-policy-section p {
+    text-align: justify;
+}
+.policy-p {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+#privacy-policy-section ol{
+    margin-left: 50px;
+}
