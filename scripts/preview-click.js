@@ -1,41 +1,30 @@
-body = document.querySelector('body')
+const body = document.querySelector('body')
+const appPreview = document.querySelector('#app-screen')
 
-appPreview = document.querySelector('#app-screen')
+const modalBackground = document.querySelector('#download-app-modal')
+const modal = document.querySelector('#modal-card')
 
-modalBackground = document.querySelector('#download-app-modal')
-modal = document.querySelector('#modal-card')
-closeModalBtn = document.querySelector('#close-modal')
-goToDownloadBtn = document.querySelector('#go-to-download')
+const closeModalBtn = document.querySelector('#close-modal')
+const goToDownloadBtn = document.querySelector('#go-to-download')
 
-userScroll = 0
+const showModal = () => {
+    modalBackground.style = `display: flex;`;
+    body.style = 'overflow: hidden;';
+} 
 
-let closeModal = () => {
-    modalBackground.style = "display: none";
-    body.style = 'overflow: initial';
+const closeModal = () => {
+    modalBackground.style = "display: none;";
+    body.style = 'overflow: initial;';
 }
 
-window.onscroll = function (e) {
-    userScroll = window.scrollY;
-};
-
-appPreview.addEventListener('click', (e) => {
-    modalBackground.style = `display: grid; top: ${userScroll}px`;
-    body.style = 'overflow: hidden';
-}, false);
-
-modalBackground.addEventListener('click', (e) => {
-    if(e.target !== e.currentTarget) {
-        console.log("...") 
-    } 
-    else {
-        closeModal();
+const closeModalBg = ({target, currentTarget}) => {
+    if (target === currentTarget) {
+        closeModal()
     }
-}, false);
+}
 
-closeModalBtn.addEventListener('click', (e) => {
-    closeModal();
-}, false);
+appPreview.addEventListener('click', showModal, false);
 
-goToDownloadBtn.addEventListener('click', (e) => {
-    closeModal();
-}, false);
+modalBackground.addEventListener('click', closeModalBg, false);
+closeModalBtn.addEventListener('click', closeModal, false);
+goToDownloadBtn.addEventListener('click', closeModal, false);
