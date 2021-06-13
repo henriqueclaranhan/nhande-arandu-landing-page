@@ -45,38 +45,51 @@
     cursor: pointer;
 }
 #close-modal p {
-    padding-top: 1px;
     position: relative;
+
+    padding-top: 1px;
+    
+    color: black !important;
     font-size: 23px;
     font-weight: 500;
-    color: black;
+    
 }
 #modal-img {
-    margin-top: -15px;
     --img-size: 50px;
+
+    margin-top: -15px;
+
     width: var(--img-size);
     height: var(--img-size);
 }
 #modal-card h2 {
     text-align: center;
-    margin-bottom: 7px;
     color: rgba(0, 0, 0, 0.794);
+
+    margin-bottom: 7px;
+    
 }
 #modal-card p {
     text-align: center;
-    margin: 7px 23px;
     color: rgba(0, 0, 0, 0.794);
+
+    margin: 7px 23px;
 }
 #go-to-download {
+    background-color: darkcyan;
+    height: 40px;
+    width: 150px;
+
     position: absolute;
     bottom: 20px;
     left: 25%;
-    display: grid;
+
+    display: flex;
     place-items: center;
-    height: 40px;
-    width: 150px;
+    place-content:center;
+    
     border-radius: 10px;
-    background-color: darkcyan;
+    
 }
 #go-to-download span {
     font-weight: 600;
