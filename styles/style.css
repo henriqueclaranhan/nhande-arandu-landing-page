@@ -18,6 +18,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--bgcolor-dark);
     height: 100vh;
